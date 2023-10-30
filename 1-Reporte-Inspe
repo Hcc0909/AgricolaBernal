@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reporte De Inspección</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: #0f0;  
+    }
+
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;  
+      background-color: #fff;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input, 
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }  
+
+    button {
+      padding: 10px 20px;
+      background-color: #0f0;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #090;
+    }
+
+    @media (max-width: 600px) {
+      form {
+        max-width: 100%;
+        margin: 0 10px; 
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>Reporte De Inspeccion</h1>
+
+<form>
+
+<label>Folio:</label>
+<input type="text" id="folio" value="1" readonly>
+
+<label>Fecha:</label> 
+<input type="text" id="fecha" value="29/10/2023" readonly>
+
+<label>Cultivo:</label>
+<input type="text" id="cultivo">
+
+<label>Superficie (m2):</label>  
+<input type="number" id="superficie">
+  
+<button type="submit">Enviar</button>
+
+</form>
+
+<script>
+// Código JavaScript para autoincrementar el folio  
+let folio = document.getElementById("folio");
+let num = parseInt(folio.value);
+
+function increment(){
+  num++;
+  folio.value = num; 
+}
+
+increment(); // Incrementa en 1 para iniciar en 2
+</script>
+
+</body>
+</html>
