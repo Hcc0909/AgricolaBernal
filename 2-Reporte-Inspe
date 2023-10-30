@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Reporte De Inspección</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: #0f0;  
+    }
+
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;  
+      background-color: #fff;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input, 
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }  
+
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #0f0;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #090;
+    }
+
+    @media (max-width: 600px) {
+      form {
+        max-width: 100%;
+        margin: 0 10px; 
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>Reporte De Inspeccion</h1>
+
+<form>
+
+<label>Folio:</label>
+<input type="text" id="folio" value="1" readonly>
+
+<label>Fecha:</label> 
+<input type="text" id="fecha" value="29/10/2023" readonly>
+
+<label>Cultivo:</label>
+<input type="text" id="cultivo">
+
+<label>Superficie (m2):</label>  
+<input type="number" id="superficie">
+
+<label>Plagas:</label>
+<select id="plagas">
+  <option value="Ácaros">Acaros</option>
+  <option value="Gusano Alfiler">Gusano Alfiler</option>
+  <option value="Gusano de cuerno">Gusano de cuerno</option>
+  <option value="Gusano Cogollero">Gusano Cogollero</option>
+  <option value="Gusano Del Fruto">Gusano Del Fruto</option>
+  <option value="Gusano Falso Medidor">Gusano Falso Medidor</option>
+  <option value="Gusano Minador de Hoja">Gusano Minador de Hoja</option>
+  <option value="Gusano Soldador">Gusano Soldador</option>
+  <option value="Gusano Trozador">Gusano Trozador</option>
+  <option value="Grillos">Grillos</option>
+  <option value="Gallina Ciega">Gallina Ciega</option>
+  <option value="Mosca Blanca">Mosca Blanca</option>
+  <option value="Pulga Saltona">Pulga Saltona</option>
+  <option value="Trips">Trips</option>
+  <option value="Chicharritas">Chicharritas</option>
+</select>
+
+<label>Estado Biologico:</label>
+<select id="estadoBiologico">
+  <option value="H">Huevecillos</option>
+  <option value="L">Larva</option>
+  <option value="P">Pupa</option>
+  <option value="A">Adulto</option>
+  <option value="N">Ninfas</option>
+</select>
+
+<label>Grado de Infestacion:</label>
+<select id="gradoInfestacion">
+  <option value="Presente">Presente</option>
+  <option value="Baja">Baja</option>
+  <option value="Media">Media</option>
+  <option value="Fuerte">Fuerte</option>
+</select>
+
+<label>Observaciones:</label>
+<textarea id="observaciones"></textarea>
+  
+<button type="submit">Enviar</button>
+
+</form>
+
+<script>
+// Código JavaScript para autoincrementar el folio  
+let folio = document.getElementById("folio");
+let num = parseInt(folio.value);
+
+function increment(){
+  num++;
+  folio.value = num; 
+}
+
+increment(); // Incrementa en 1 para iniciar en 2
+</script>
+
+</body>
+</html>
