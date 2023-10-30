@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Agricola Bernal</title>
+  <link rel="stylesheet" type="text/css" href="estilosab.css">
+</head>
+<body>
+  <h1 class="title">Registro De Clientes </h1>
+  
+  <table style="width: 541px;">
+    <tbody>
+      <tr>
+        <th style="width: 354.55px;">Cliente</th>
+        <th style="width: 172.85px;">Tipo de dato</th>
+      </tr>
+      <tr>
+        <td style="width: 354.55px;"><label for="numero_folio_cliente">N&uacute;mero de folio del cliente</label></td>
+        <td style="width: 172.85px;"><input type="number" id="numero_folio_cliente" name="numero_folio_cliente" /></td>
+      </tr>
+      <tr>
+        <td style="width: 354.55px;"><label for="numero_celular">N&uacute;mero de celular del agricultor o empresa consultada</label></td>
+        <td style="width: 172.85px;"><input type="tel" id="numero_celular" name="numero_celular" /></td>
+      </tr>
+      <tr>
+        <td style="width: 354.55px;"><label for="pais">Lugar (pa&iacute;s)</label></td>
+        <td style="width: 172.85px;"><input type="text" id="pais" name="pais" /></td>
+      </tr>
+      <tr>
+        <td style="width: 354.55px;"><label for="estado">Lugar (estado)</label></td>
+        <td style="width: 172.85px;"><input type="text" id="estado" name="estado" /></td>
+      </tr>
+      <tr>
+        <td style="width: 354.55px;"><label for="municipio">Lugar (municipio)</label></td>
+        <td style="width: 172.85px;"><input type="text" id="municipio" name="municipio" /></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <p></p>
+  
+  <table style="width: 350px;">
+    <tbody>
+      <tr>
+        <th style="width: 113.688px;">Consultoría</th>
+        <th style="width: 207.712px;">Tipo de dato</th>
+      </tr>
+      <tr>
+        <td style="width: 113.688px;"><label for="fecha_consultoria">Fecha (d&iacute;a/mes/a&ntilde;o)</label></td>
+        <td style="width: 207.712px;"><input type="date" id="fecha_consultoria" name="fecha_consultoria" /></td>
+      </tr>
+      <tr>
+        <td style="width: 113.688px;"><label for="nombre_consultoria">Nombre de quien hizo la consultor&iacute;a</label></td>
+        <td style="width: 207.712px;"><input type="text" id="nombre_consultoria" name="nombre_consultoria" /></td>
+      </tr>
+      <tr>
+        <td style="width: 113.688px;"><label for="numero_telefono_consultor">N&uacute;mero de tel&eacute;fono del consultor</label></td>
+        <td style="width: 207.712px;"><input type="tel" id="numero_telefono_consultor" name="numero_telefono_consultor" /></td>
+      </tr>
+      <tr>
+        <td style="width: 113.688px;"><label for="numero_folio_cliente">N&uacute;mero de folio del cliente</label></td>
+        <td style="width: 207.712px;"><input type="number" id="numero_folio_cliente" name="numero_folio_cliente" /></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <p></p>
+  
+  <table style="width: 279px;">
+    <tbody>
+      <tr>
+        <th style="width: 93.225px;">Cultivo</th>
+        <th style="width: 172.175px;">Tipo de dato</th>
+      </tr>
+      <tr>
+        <td style="width: 93.225px;"><label for="cultivo">Cultivo</label></td>
+        <td style="width: 172.175px;"><input type="text" id="cultivo" name="cultivo" /></td>
+      </tr>
+      <tr>
+        <td style="width: 93.225px;"><label for="tipo_cultivo">Tipo de cultivo</label></td>
+        <td style="width: 172.175px;"><input type="text" id="tipo_cultivo" name="tipo_cultivo" /></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <p></p>
+  
+  <table style="width: 378px;">
+    <tbody>
+      <tr>
+        <th style="width: 191.725px;">Terreno</th>
+        <th style="width: 172.675px;">Tipo de dato</th>
+      </tr>
+      <tr>
+        <td style="width: 191.725px;"><label for="superficie_terreno_m2">Superficie del terreno en m2</label></td>
+        <td style="width: 172.675px;"><input type="number" id="superficie_terreno_m2" name="superficie_terreno_m2" /></td>
+      </tr>
+      <tr>
+        <td style="width: 191.725px;"><label for="medida_perimetro">Medida de per&iacute;metro</label></td>
+        <td style="width: 172.675px;"><input type="text" id="medida_perimetro" name="medida_perimetro" /></td>
+      </tr>
+      <tr>
+        <td style="width: 191.725px;"><label for="cultivo">Cultivo</label></td>
+        <td style="width: 172.675px;"><input type="text" id="cultivo" name="cultivo" /></td>
+      </tr>
+      <tr>
+        <td style="width: 191.725px;"><label for="numero_folio_cliente">N&uacute;mero de folio del cliente</label></td>
+        <td style="width: 172.675px;"><input type="number" id="numero_folio_cliente" name="numero_folio_cliente" /></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <p></p>
+  
+  <table style="width: 404px;">
+    <tbody>
+      <tr>
+        <th style="width: 217.738px;">Plaga</th>
+        <th style="width: 172.663px;">Tipo de dato</th>
+      </tr>
+      <tr>
+        <td style="width: 217.738px;"><label for="nombre_plaga">Nombre en com&uacute;n de la plaga</label></td>
+        <td style="width: 172.663px;"><input type="text" id="nombre_plaga" name="nombre_plaga" /></td>
+      </tr>
+      <tr>
+        <td style="width: 217.738px;"><label for="estado_biologico">Estado Biol&oacute;gico de la plaga</label></td>
+        <td style="width: 172.663px;"><input type="text" id="estado_biologico" name="estado_biologico" /></td>
+      </tr>
+      <tr>
+        <td style="width: 217.738px;"><label for="grado_infestacion">Grado de infestaci&oacute;n de la plaga</label></td>
+        <td style="width: 172.663px;"><input type="text" id="grado_infestacion" name="grado_infestacion" /></td>
+      </tr>
+      <tr>
+        <td style="width: 217.738px;"><label for="observaciones">Sus observaciones</label></td>
+        <td style="width: 172.663px;"><textarea id="observaciones" name="observaciones"></textarea></td>
+      </tr>
+      <tr>
+        <td style="width: 217.738px;"><label for="numero_folio_cliente">N&uacute;mero de folio del cliente</label></td>
+        <td style="width: 172.663px;"><input type="number" id="numero_folio_cliente" name="numero_folio_cliente" /></td>
+      </tr>
+      <tr>
+        <td style="width: 217.738px;"><label for="cultivo">Cultivo</label></td>
+        <td style="width: 172.663px;"><input type="text" id="cultivo" name="cultivo" /></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <p></p>
+  
+  <table style="width: 319px;">
+    <tbody>
+      <tr>
+        <th style="width: 124.963px;">Costos</th>
+        <th style="width: 180.438px;">Tipo de dato</th>
+      </tr>
+      <tr>
+        <td style="width: 124.963px;"><label for="costo_consultoria">Costo de la consultor&iacute;a</label></td>
+        <td style="width: 180.438px;"><input type="number" id="costo_consultoria" name="costo_consultoria" /></td>
+      </tr>
+      <tr>
+        <td style="width: 124.963px;"><label for="costo_productos_adquiridos">Costo desglosado de los productos adquiridos</label></td>
+        <td style="width: 180.438px;"><input type="number" id="costo_productos_adquiridos" name="costo_productos_adquiridos" /></td>
+      </tr>
+      <tr>
+        <td style="width: 124.963px;"><label for="numero_folio_cliente">N&uacute;mero de folio del cliente</label></td>
+        <td style="width: 180.438px;"><input type="number" id="numero_folio_cliente" name="numero_folio_cliente" /></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
+
