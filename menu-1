@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Menú de navegación</title>
+</head>
+<body>
+
+  <nav>
+    <a href="https://www.facebook.com/agricolabernal" class="brand">
+      <img src="https://www.agricolabernal.com/wp-content/uploads/2021/08/logo-agricola-bernal-transparente.png" alt="Agricola Bernal">
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="https://www.agricolabernal.com/" class="nav-link">Inicio</a></li>
+      <li><a href="https://www.agricolabernal.com/nosotros/" class="nav-link">Nosotros</a></li>
+      <li><a href="https://www.agricolabernal.com/productos/" class="nav-link">Productos</a></li>
+      <li><a href="https://www.agricolabernal.com/contacto/" class="nav-link">Contacto</a></li>
+    </ul>
+  </nav>
+
+</body>
+</html>
