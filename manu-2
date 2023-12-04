@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menú de navegación</title>
+    <!-- Importing fonts from Google -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap">
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #ecf0f3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        nav {
+            background-color: #ecf0f3;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .brand {
+            display: block;
+            margin: 0 auto 20px;
+        }
+
+        .brand img {
+            width: 150px;
+            height: auto;
+        }
+
+        .brand h1 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #555;
+        }
+
+        .nav-links {
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-bottom: 10px;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #03A9F4;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .nav-link:hover {
+            color: #039BE5;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="brand">
+        <img src="https://www.agricolabernal.com/wp-content/uploads/2021/08/logo-agricola-bernal-transparente.png" alt="Agricola Bernal">
+        <h1>Agricola Bernal</h1>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="file:///D:/Visual/AB.html" class="nav-link">Registro Cliente</a></li>
+        <li><a href="file:///D:/Visual/Agricola%20Bernal.html" class="nav-link">Reporte de Inspeccion</a></li>
+        <li><a href="https://www.agricolabernal.com/productos/" class="nav-link">Insumos</a></li>
+        <li><a href="https://www.agricolabernal.com/contacto/" class="nav-link">Calendario de Consultorias</a></li>
+    </ul>
+</nav>
+
+</body>
+</html>
