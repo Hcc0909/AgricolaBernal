@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Registro Clientes</title>
+  <style>
+    /* Estilos ... */
+
+    .calendario-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .calendario {
+      display: inline-block;
+    }
+
+    #calendario {
+      width: 300px;
+      border-collapse: collapse;
+    }
+
+    #calendario th,
+    #calendario td {
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      border: 1px solid #ddd;
+    }
+
+    #detalle-consultorias {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    #detalle-consultorias p {
+      margin: 0;
+      padding: 10px;
+      border: 1px solid #ddd;
+    }
+  </style>
+  <script>
+    // Función para abrir el calendario y seleccionar una fecha
+    function abrirCalendario() {
+      document.getElementById('calendario').style.display = 'block';
+    }
+
+    // Función para cerrar el calendario
+    function cerrarCalendario() {
+      document.getElementById('calendario').style.display = 'none';
+    }
+
+    // Función para mostrar la información de las consultorías de un día específico
+    function mostrarConsultorias(fecha) {
+      cerrarCalendario(); // Cierra el calendario al seleccionar una fecha
+
+      // Aquí puedes obtener las consultorías de la fecha seleccionada desde el almacenamiento local
+      // y mostrar la información en la sección correspondiente
+
+      // Ejemplo de cómo podrías mostrar la información:
+      let detalleConsultoriasDiv = document.getElementById('detalle-consultorias');
+      detalleConsultoriasDiv.innerHTML = "<p>Detalles de consultorías para el " + fecha + "</p>";
+
+      // Aquí deberías obtener las consultorías de la fecha seleccionada y mostrar la información
+    }
+  </script>
+</head>
+
+<body>
+
+  <!-- ... (Código existente) -->
+
+  <!-- Calendario -->
+  <div class="calendario-container">
+    <button onclick="abrirCalendario()">Abrir Calendario</button>
+    <div id="calendario" style="display: none;">
+      <table id="calendario">
+        <thead>
+          <tr>
+            <th>Domingo</th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miércoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+            <th>Sábado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Aquí debes generar dinámicamente los días del calendario -->
+          <!-- Puedes utilizar JavaScript para esto -->
+        </tbody>
+      </table>
+      <button onclick="cerrarCalendario()">Cerrar Calendario</button>
+    </div>
+  </div>
+
+  <!-- Detalle de Consultorías -->
+  <div id="detalle-consultorias"></div>
+
+  <!-- ... (Código existente) -->
+
+</body>
+
+</html>
